@@ -1,0 +1,33 @@
+.WelcomeNav {
+  display: flex;
+  position: sticky;
+  height: 70px;
+  background-color: var(--dark-grey);
+  justify-content: flex-end;
+  h1 {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 0;
+    width: 160px;
+    height: 2rem;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+    top: calc(35px - 1rem);
+    left: calc(50vw - 80px);
+  }
+  .MuiButton-root {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    height: max-content;
+    margin: auto 0;
+    float: right;
+    color: white;
+  }
+  button:last-of-type {
+    margin-right: 8px;
+    color: var(--pink);
+  }
+}
