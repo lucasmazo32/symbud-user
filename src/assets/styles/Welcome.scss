@@ -1,0 +1,115 @@
+.Welcome {
+  .main-img {
+    background-image: url(../images/welcome/portrait.jpg);
+    background-size: cover;
+  }
+  .main-container {
+    background-color: #343a40a6;
+    height: 600px;
+  }
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+  }
+  .main-info {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+  }
+  .register-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    .MuiButton-root {
+      margin: 0 auto;
+      margin-top: 175px;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      background-color: var(--pink);
+      span {
+        // color: ;
+      }
+    }
+    span {
+      text-align: center;
+      color: white;
+    }
+    svg {
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 40px;
+      transform: rotate(90deg);
+    }
+  }
+  .how-it-works {
+    display: flex;
+    margin-top: 50px;
+    .how-container {
+      padding: 5px 10px;
+    }
+    h2 {
+      display: none;
+    }
+    h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .subjects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    h2 {
+      flex-basis: 100%;
+      font-weight: bold;
+      text-align: center;
+    }
+    .subject-container {
+      position: relative;
+      flex-basis: 33.33%;
+      padding-bottom: 33.33%;
+      background-size: cover;
+      background-position-x: center;
+      h3 {
+        position: absolute;
+        opacity: 0.7;
+        width: 100%;
+        padding: calc(50% - 1rem) 0;
+        text-align: center;
+        background-color: var(--dark-grey);
+        color: white;
+      }
+    }
+    .s-education {
+      background-image: url(../images/welcome/study.jpg);
+    }
+    .s-language {
+      background-image: url(../images/welcome/languages.png);
+    }
+    .s-workout {
+      background-image: url(../images/welcome/workout.jpg);
+    }
+  }
+  .waiting {
+    margin-top: 50px;
+    h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+    h3 {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .MuiButton-root {
+      background-color: var(--dark-grey);
+      margin-top: 10px;
+      color: white;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
