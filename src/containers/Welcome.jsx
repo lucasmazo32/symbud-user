@@ -1,12 +1,19 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { Button } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 import { ReactComponent as Arrow } from '../assets/images/welcome/arrow.svg';
 import WelcomeNav from '../components/WelcomeNav';
 import WelcomeFooter from '../components/WelcomeFooter';
 import '../assets/styles/Welcome.scss';
 
 export default function Welcome() {
+  const history = useHistory();
+
+  const handleSignUp = () => {
+    history.push('/signup');
+  };
+
   return (
     <div className="Welcome">
       <WelcomeNav />
@@ -16,7 +23,7 @@ export default function Welcome() {
             <h2 className="title">Let&#39;s grow together</h2>
             <h3 className="main-info">Find a buddy. Connect. Learn together.</h3>
             <div className="register-container">
-              <Button>REGISTER</Button>
+              <Button onClick={handleSignUp}>REGISTER</Button>
               <span>Discover the experience</span>
               <Arrow />
             </div>
@@ -56,10 +63,10 @@ export default function Welcome() {
         <section className="waiting container-xl">
           <h2>What are you waiting for?</h2>
           <h3>Registering is completely free.</h3>
-          <Button>Sign up now</Button>
+          <Button onClick={() => history.push('/signup')}>Sign up now</Button>
         </section>
+        <WelcomeFooter />
       </main>
-      <WelcomeFooter />
     </div>
   );
 }

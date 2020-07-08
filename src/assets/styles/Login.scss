@@ -1,0 +1,21 @@
+.Login {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  .login-container {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    @media only screen and (max-width: 992px) {
+      grid-template-columns: 45% 55%;
+    }
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 0% 100%;
+    }
+    .image {
+      background-image: url(../images/login/sunset.jpg);
+      background-size: cover;
+      background-position-x: center;
+      height: calc(100vh - 70px);
+    }
+  }
+}
