@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { Button } from '@material-ui/core';
 import { ReactComponent as Arrow } from '../assets/images/welcome/arrow.svg';
 import WelcomeNav from '../components/WelcomeNav';
+import WelcomeFooter from '../components/WelcomeFooter';
 import '../assets/styles/Welcome.scss';
 
 export default function Welcome() {
@@ -20,7 +22,7 @@ export default function Welcome() {
             </div>
           </div>
         </section>
-        <section className="how-it-works container">
+        <section className="how-it-works container-xl">
           <h2>How it works</h2>
           <div className="how-container">
             <h3>
@@ -39,7 +41,7 @@ export default function Welcome() {
             </p>
           </div>
         </section>
-        <section className="subjects container">
+        <section className="subjects container-xl">
           <h2>Fields</h2>
           <div className="subject-container s-language">
             <h3>Languages</h3>
@@ -51,12 +53,13 @@ export default function Welcome() {
             <h3>Work Out</h3>
           </div>
         </section>
-        <section className="waiting container">
+        <section className="waiting container-xl">
           <h2>What are you waiting for?</h2>
           <h3>Registering is completely free.</h3>
           <Button>Sign up now</Button>
         </section>
       </main>
+      <WelcomeFooter />
     </div>
   );
 }

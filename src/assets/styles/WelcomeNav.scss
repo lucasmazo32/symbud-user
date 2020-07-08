@@ -19,6 +19,9 @@
     line-height: 1;
     top: calc(35px - 1rem);
     left: calc(50vw - 80px);
+    @media only screen and (max-width: 576px) {
+      left: 10px;
+    }
   }
   .MuiButton-root {
     font-family: 'Poppins', sans-serif;
@@ -27,6 +30,15 @@
     margin: auto 0;
     float: right;
     color: white;
+    @media only screen and (max-width: 300px) {
+      width: 50px;
+      padding: 6px 0;
+    }
+  }
+  .MuiButton-label {
+    @media only screen and (max-width: 300px) {
+      width: inherit;
+    }
   }
   button:last-of-type {
     margin-right: 8px;
