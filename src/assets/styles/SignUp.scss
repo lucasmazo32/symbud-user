@@ -1,0 +1,7 @@
+.SignUp {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  .register-container {
+    grid-row: 2 / 3;
+  }
+}

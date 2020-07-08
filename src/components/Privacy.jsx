@@ -17,6 +17,8 @@ function getModalStyle() {
 
 const useStyles = makeStyles((theme) => ({
   paper: {
+    width: '800px',
+    maxWidth: '95vw',
     position: 'absolute',
     height: '80vh',
     overflowY: 'auto',
@@ -108,7 +110,7 @@ export default function SimpleModal() {
       <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
       <p>Symbud does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 
-      <button className="btn btn-secondary" type="button" onClick={handleClose}>
+      <button style={{ marginBottom: '1rem', float: 'right' }} className="btn btn-secondary" type="button" onClick={handleClose}>
         Close
       </button>
     </div>

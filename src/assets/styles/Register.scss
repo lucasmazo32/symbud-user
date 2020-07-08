@@ -1,12 +1,26 @@
-.SignIn {
+.Register {
   display: flex;
   flex-flow: column;
-  padding-top: 10%;
+  padding-top: 25px;
   align-items: center;
   height: calc(100vh - 70px);
   overflow-y: scroll;
+  .MuiButton-containedPrimary {
+    background-color: var(--dark-grey);
+    &:hover {
+      background-color: var(--dark-grey);
+    }
+  }
   form {
+    max-width: 500px;
     width: 80%;
+    .MuiFormControlLabel-root {
+      margin-top: 15px;
+      width: 100%;
+    }
+    .MuiInputBase-root {
+      width: 100%;
+    }
   }
   .form-title {
     display: flex;
@@ -23,14 +37,8 @@
       background-color: rgb(220, 0, 78);
     }
   }
-  .MuiButton-containedPrimary {
-    background-color: var(--dark-grey);
-    &:hover {
-      background-color: var(--dark-grey);
-    }
-  }
   .MuiTextField-root {
-    margin-top: 25px;
+    margin-top: 15px;
     width: 100%;
   }
   button {
@@ -41,6 +49,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 500px;
     width: 80%;
     margin-top: 25px;
     padding-bottom: 20px;
@@ -53,5 +62,23 @@
         text-decoration: underline;
       }
     }
+  }
+  .more-info {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--dark-grey);
+    display: block;
+  }
+  .leter-counter.danger {
+    color: red;
+  }
+  .leter-counter {
+    color: var(--dark-grey);
+  }
+  .MuiFormControl-root {
+    display: block;
+  }
+  .MuiOutlinedInput-root {
+    min-width: 150px;
   }
 }
