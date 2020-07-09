@@ -5,6 +5,13 @@
   align-items: center;
   height: calc(100vh - 70px);
   overflow-y: scroll;
+  .alert-cont.open {
+    display: block;
+    margin-top: 15px;
+  }
+  .alert-cont {
+    display: none;
+  }
   form {
     width: 80%;
   }
